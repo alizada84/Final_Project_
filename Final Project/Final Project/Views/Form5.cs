@@ -16,5 +16,10 @@ namespace Final_Project.Views
         {
             InitializeComponent();
         }
+
+        private void btn_shop_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

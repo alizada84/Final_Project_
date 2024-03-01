@@ -34,12 +34,13 @@
             // 
             // btn_shop
             // 
-            btn_shop.Location = new Point(314, 12);
+            btn_shop.Location = new Point(314, 8);
             btn_shop.Name = "btn_shop";
             btn_shop.Size = new Size(156, 84);
             btn_shop.TabIndex = 3;
             btn_shop.Text = "Shopping";
             btn_shop.UseVisualStyleBackColor = true;
+            btn_shop.Click += btn_shop_Click;
             // 
             // btn_balance
             // 

@@ -6,6 +6,6 @@ public class Users
     public string UserName { get; set; }
     public string UserSurname { get; set; }
     public DateTime BirthDate { get; set; }
-    public int UserBalance { get; set; }
+    public float UserBalance { get; set; }
     public int RoleId { get; set; }
 }
