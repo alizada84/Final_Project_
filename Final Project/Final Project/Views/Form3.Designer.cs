@@ -31,6 +31,7 @@
             btn_delete1 = new Button();
             dataUsers = new DataGridView();
             btn_Update1 = new Button();
+            btn_Add1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataUsers).BeginInit();
             SuspendLayout();
             // 
@@ -62,11 +63,21 @@
             btn_Update1.Text = "Update";
             btn_Update1.UseVisualStyleBackColor = true;
             // 
+            // btn_Add1
+            // 
+            btn_Add1.Location = new Point(12, 291);
+            btn_Add1.Name = "btn_Add1";
+            btn_Add1.Size = new Size(131, 50);
+            btn_Add1.TabIndex = 4;
+            btn_Add1.Text = "Add";
+            btn_Add1.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(702, 353);
+            Controls.Add(btn_Add1);
             Controls.Add(dataUsers);
             Controls.Add(btn_delete1);
             Controls.Add(btn_Update1);
@@ -83,5 +94,6 @@
         private Button btn_delete1;
         private DataGridView dataUsers;
         private Button btn_Update1;
+        private Button btn_Add1;
     }
 }

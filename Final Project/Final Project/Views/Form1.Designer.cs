@@ -31,7 +31,7 @@
             txtBox_username = new TextBox();
             lbl_username = new Label();
             lbl_password = new Label();
-            textBox_password = new TextBox();
+            txtBox_id = new TextBox();
             btn_login = new Button();
             SuspendLayout();
             // 
@@ -41,7 +41,6 @@
             txtBox_username.Name = "txtBox_username";
             txtBox_username.Size = new Size(185, 27);
             txtBox_username.TabIndex = 0;
-            txtBox_username.TextChanged += txtBox_username_TextChanged;
             // 
             // lbl_username
             // 
@@ -57,17 +56,16 @@
             lbl_password.AutoSize = true;
             lbl_password.Location = new Point(52, 180);
             lbl_password.Name = "lbl_password";
-            lbl_password.Size = new Size(70, 20);
+            lbl_password.Size = new Size(22, 20);
             lbl_password.TabIndex = 2;
-            lbl_password.Text = "Password";
+            lbl_password.Text = "Id";
             // 
-            // textBox_password
+            // txtBox_id
             // 
-            textBox_password.Location = new Point(52, 222);
-            textBox_password.Name = "textBox_password";
-            textBox_password.Size = new Size(185, 27);
-            textBox_password.TabIndex = 3;
-            textBox_password.TextChanged += textBox_password_TextChanged;
+            txtBox_id.Location = new Point(52, 222);
+            txtBox_id.Name = "txtBox_id";
+            txtBox_id.Size = new Size(185, 27);
+            txtBox_id.TabIndex = 3;
             // 
             // btn_login
             // 
@@ -85,7 +83,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(382, 453);
             Controls.Add(btn_login);
-            Controls.Add(textBox_password);
+            Controls.Add(txtBox_id);
             Controls.Add(lbl_password);
             Controls.Add(lbl_username);
             Controls.Add(txtBox_username);
@@ -101,7 +99,7 @@
         private TextBox txtBox_username;
         private Label lbl_username;
         private Label lbl_password;
-        private TextBox textBox_password;
+        private TextBox txtBox_id;
         private Button btn_login;
     }
 }
