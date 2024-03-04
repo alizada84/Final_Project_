@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dataBalance = new DataGridView();
             btn_adddToBalance = new Button();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            txt_balance = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataBalance).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataBalance
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(41, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(300, 188);
-            dataGridView1.TabIndex = 0;
+            dataBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataBalance.Location = new Point(41, 12);
+            dataBalance.Name = "dataBalance";
+            dataBalance.RowHeadersWidth = 51;
+            dataBalance.RowTemplate.Height = 29;
+            dataBalance.Size = new Size(300, 188);
+            dataBalance.TabIndex = 0;
             // 
             // btn_adddToBalance
             // 
@@ -52,33 +52,35 @@
             btn_adddToBalance.TabIndex = 1;
             btn_adddToBalance.Text = "Add To Balance";
             btn_adddToBalance.UseVisualStyleBackColor = true;
+            btn_adddToBalance.Click += btn_adddToBalance_Click;
             // 
-            // textBox1
+            // txt_balance
             // 
-            textBox1.Location = new Point(41, 229);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 2;
+            txt_balance.Location = new Point(41, 229);
+            txt_balance.Name = "txt_balance";
+            txt_balance.Size = new Size(125, 27);
+            txt_balance.TabIndex = 2;
             // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(394, 385);
-            Controls.Add(textBox1);
+            Controls.Add(txt_balance);
             Controls.Add(btn_adddToBalance);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataBalance);
             Name = "Form6";
             Text = "Form6";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += Form6_Load;
+            ((System.ComponentModel.ISupportInitialize)dataBalance).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataBalance;
         private Button btn_adddToBalance;
-        private TextBox textBox1;
+        private TextBox txt_balance;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Final_Project.Models.Other;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,21 @@ namespace Final_Project.Views
         }
 
         private void Form4_Load(object sender, EventArgs e)
+        {
+            dataUsers.DataSource = Manage.GetUsers();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
         {
 
         }

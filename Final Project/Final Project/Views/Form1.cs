@@ -37,8 +37,8 @@ namespace Final_Project
                         }
                         else if (user.RoleId == 2)
                         {
-                            Form2 form2 = new Form2();
-                            form2.ShowDialog();
+                            Form5 form5 = new Form5(Id);
+                            form5.ShowDialog();
 
                             this.Close();
                         }

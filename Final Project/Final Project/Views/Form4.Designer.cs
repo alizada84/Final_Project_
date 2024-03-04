@@ -53,6 +53,7 @@
             btn_delete.TabIndex = 6;
             btn_delete.Text = "Delete";
             btn_delete.UseVisualStyleBackColor = true;
+            btn_delete.Click += btn_delete_Click;
             // 
             // btn_Update
             // 
@@ -62,6 +63,7 @@
             btn_Update.TabIndex = 5;
             btn_Update.Text = "Update";
             btn_Update.UseVisualStyleBackColor = true;
+            btn_Update.Click += btn_Update_Click;
             // 
             // btn_add
             // 
@@ -71,6 +73,7 @@
             btn_add.TabIndex = 4;
             btn_add.Text = "Add";
             btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
             // Form4
             // 

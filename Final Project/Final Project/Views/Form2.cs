@@ -19,12 +19,18 @@ namespace Final_Project.Views
 
         private void btn_register_Click(object sender, EventArgs e)
         {
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
 
+            this.Close();
         }
 
         private void btn_product_Click(object sender, EventArgs e)
         {
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
 
+            this.Close();
         }
     }
 }

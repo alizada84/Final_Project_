@@ -11,31 +11,18 @@ using System.Windows.Forms;
 
 namespace Final_Project.Views
 {
-    public partial class Form3 : Form
+    public partial class Form7 : Form
     {
-        public Form3()
+        public int Id { get; set; }
+        public Form7(int id)
         {
             InitializeComponent();
+            Id = id;
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Form7_Load(object sender, EventArgs e)
         {
             dataProducts.DataSource = Manage.GetProducts();
-        }
-
-        private void btn_Add1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Update1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_delete1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

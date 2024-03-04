@@ -50,6 +50,7 @@
             btn_balance.TabIndex = 2;
             btn_balance.Text = "Add to Balance";
             btn_balance.UseVisualStyleBackColor = true;
+            btn_balance.Click += btn_balance_Click;
             // 
             // Form5
             // 
